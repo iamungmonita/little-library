@@ -1,0 +1,30 @@
+.nav {
+   width: 100vw;
+   height: 20vh;
+   padding: 2rem;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid black;
+}
+.borderBottomHover::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: green;
+    transition-duration: 500ms;
+}
+.borderBottomHover:hover:after  {
+    width: 100%;
+}
+.borderBottomHoverMobile {
+    padding: 10px 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sublink {
+    font-size: 14px;
+    padding-left: 0;
+}
